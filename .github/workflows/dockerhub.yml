@@ -1,9 +1,10 @@
+```yaml
 name: Publicar microservicios en Docker Hub
 
 on:
   push:
     branches:
-      - principal
+      - main
   workflow_dispatch:
 
 jobs:
@@ -29,7 +30,8 @@ jobs:
       - name: Construir y publicar vehículos
         uses: docker/build-push-action@v6
         with:
-          context:context: "./vehículos"
+          context: ./vehículos
+          file: ./vehículos/Dockerfile
           push: true
           tags: isags2026/vehiculos:1.0
 
@@ -39,3 +41,4 @@ jobs:
           context: ./compras
           push: true
           tags: isags2026/compras:1.0
+```
