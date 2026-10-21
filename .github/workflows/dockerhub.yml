@@ -1,7 +1,7 @@
 ```yaml
 name: Publicar microservicios en Docker Hub
 
-on:
+"on":
   push:
     branches:
       - main
@@ -10,6 +10,7 @@ on:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+
     steps:
       - name: Descargar código
         uses: actions/checkout@v4
