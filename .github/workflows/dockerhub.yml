@@ -29,7 +29,7 @@ jobs:
       - name: Construir y publicar vehículos
         uses: docker/build-push-action@v6
         with:
-          context: ./vehículos
+          context:context: "./vehículos"
           push: true
           tags: isags2026/vehiculos:1.0
 
