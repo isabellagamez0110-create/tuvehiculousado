@@ -1,0 +1,41 @@
+name: Publicar microservicios en Docker Hub
+
+on:
+  push:
+    branches:
+      - principal
+  workflow_dispatch:
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Iniciar sesión en Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Construir y publicar usuarios
+        uses: docker/build-push-action@v6
+        with:
+          context: ./usuarios
+          push: true
+          tags: isags2026/usuarios:1.0
+
+      - name: Construir y publicar vehículos
+        uses: docker/build-push-action@v6
+        with:
+          context: ./vehículos
+          push: true
+          tags: isags2026/vehiculos:1.0
+
+      - name: Construir y publicar compras
+        uses: docker/build-push-action@v6
+        with:
+          context: ./compras
+          push: true
+          tags: isags2026/compras:1.0
