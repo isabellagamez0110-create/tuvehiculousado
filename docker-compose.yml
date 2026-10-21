@@ -1,0 +1,37 @@
+services:
+  usuarios:
+    image: isags2026/usuarios:1.0
+    ports:
+      - "3010:3010"
+    env_file: .env
+    restart: unless-stopped
+
+  vehiculos:
+    image: isags2026/vehiculos:1.0
+    ports:
+      - "3011:3011"
+    env_file: .env
+    restart: unless-stopped
+
+  compras:
+    image: isags2026/compras:1.0
+    ports:
+      - "3012:3012"
+    env_file: .env
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+
+  haproxy:
+    image: haproxy:2.9-alpine
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    depends_on:
+      - usuarios
+      - vehiculos
+      - compras
+    restart: unless-stopped

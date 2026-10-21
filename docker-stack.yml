@@ -1,0 +1,75 @@
+services:
+  usuarios:
+    image: isags2026/usuarios:1.0
+    ports:
+      - target: 3010
+        published: 3010
+        protocol: tcp
+        mode: ingress
+    environment:
+      DB_HOST: "${DB_HOST}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
+      DB_PORT: "${DB_PORT:-3306}"
+      DB_NAME: "${DB_NAME:-capasAlmacen}"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  vehiculos:
+    image: isags2026/vehiculos:1.0
+    ports:
+      - target: 3011
+        published: 3011
+        protocol: tcp
+        mode: ingress
+    environment:
+      DB_HOST: "${DB_HOST}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
+      DB_PORT: "${DB_PORT:-3306}"
+      DB_NAME: "${DB_NAME:-capasAlmacen}"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  compras:
+    image: isags2026/compras:1.0
+    ports:
+      - target: 3012
+        published: 3012
+        protocol: tcp
+        mode: ingress
+    environment:
+      DB_HOST: "${DB_HOST}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
+      DB_PORT: "${DB_PORT:-3306}"
+      DB_NAME: "${DB_NAME:-capasAlmacen}"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  redis:
+    image: redis:7-alpine
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  haproxy:
+    image: haproxy:2.9-alpine
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+        mode: ingress
+    volumes:
+      - /ruta/absoluta/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
