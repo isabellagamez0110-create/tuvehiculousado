@@ -1,0 +1,31 @@
+﻿tipo,marca,modelo,anio,precio,cantidad,descripcion,imagen
+Carro,Chevrolet,Onix LT,2021,48000000,1,"Sedán usado, motor 1.0, transmisión manual, color gris. Kilometraje aproximado: 45.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Renault,Duster Intens,2020,62500000,1,"SUV usada, motor 1.6, transmisión mecánica, color blanco. Kilometraje aproximado: 58.000 km.",https://images.unsplash.com/photo-1519641471654-76ce0107ad1b
+Carro,Mazda,3 Touring,2019,69500000,1,"Sedán usado, motor 2.0, transmisión automática, color rojo. Kilometraje aproximado: 62.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Kia,Picanto Vibrant,2022,49500000,1,"Hatchback usado, motor 1.0, transmisión manual, color azul. Kilometraje aproximado: 31.000 km.",https://images.unsplash.com/photo-1503376780353-7e6692767b70
+Carro,Toyota,Corolla XEI,2018,72000000,1,"Sedán usado, motor 1.8, transmisión automática, color plata. Kilometraje aproximado: 76.000 km.",https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb
+Carro,Nissan,Versa Sense,2021,53500000,1,"Sedán usado, motor 1.6, transmisión manual, color blanco. Kilometraje aproximado: 42.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Hyundai,Accent Vision,2019,51000000,1,"Sedán usado, motor 1.6, transmisión mecánica, color gris. Kilometraje aproximado: 67.000 km.",https://images.unsplash.com/photo-1503376780353-7e6692767b70
+Carro,Volkswagen,Gol Comfortline,2018,39000000,1,"Hatchback usado, motor 1.6, transmisión manual, color negro. Kilometraje aproximado: 72.000 km.",https://images.unsplash.com/photo-1492144534655-ae79c964c9d7
+Carro,Ford,EcoSport Titanium,2019,64000000,1,"SUV usada, motor 2.0, transmisión automática, color azul. Kilometraje aproximado: 61.000 km.",https://images.unsplash.com/photo-1519641471654-76ce0107ad1b
+Carro,Suzuki,Swift GL,2022,57000000,1,"Hatchback usado, motor 1.2, transmisión manual, color rojo. Kilometraje aproximado: 28.000 km.",https://images.unsplash.com/photo-1503376780353-7e6692767b70
+Carro,Chevrolet,Tracker LT,2021,78500000,1,"SUV usada, motor 1.2 turbo, transmisión automática, color plata. Kilometraje aproximado: 39.000 km.",https://images.unsplash.com/photo-1519641471654-76ce0107ad1b
+Carro,Renault,Sandero Life,2020,42000000,1,"Hatchback usado, motor 1.6, transmisión manual, color gris. Kilometraje aproximado: 54.000 km.",https://images.unsplash.com/photo-1492144534655-ae79c964c9d7
+Carro,Mazda,CX-5 Touring,2018,89500000,1,"SUV usada, motor 2.0, transmisión automática, color blanco. Kilometraje aproximado: 81.000 km.",https://images.unsplash.com/photo-1519641471654-76ce0107ad1b
+Carro,Honda,Civic EX,2019,83000000,1,"Sedán usado, motor 2.0, transmisión automática, color negro. Kilometraje aproximado: 59.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Nissan,March Advance,2018,36500000,1,"Hatchback usado, motor 1.6, transmisión manual, color blanco. Kilometraje aproximado: 74.000 km.",https://images.unsplash.com/photo-1492144534655-ae79c964c9d7
+Carro,Kia,Rio Spice,2020,47500000,1,"Sedán usado, motor 1.4, transmisión manual, color plata. Kilometraje aproximado: 48.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Toyota,Yaris XS,2021,63500000,1,"Hatchback usado, motor 1.5, transmisión automática, color gris. Kilometraje aproximado: 36.000 km.",https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb
+Carro,Chevrolet,Spark GT LT,2019,35500000,1,"Hatchback usado, motor 1.2, transmisión manual, color azul. Kilometraje aproximado: 65.000 km.",https://images.unsplash.com/photo-1492144534655-ae79c964c9d7
+Carro,Renault,Logan Intens,2022,56500000,1,"Sedán usado, motor 1.6, transmisión manual, color blanco. Kilometraje aproximado: 33.000 km.",https://images.unsplash.com/photo-1552519507-da3b142c6e3d
+Carro,Jeep,Renegade Sport,2020,79500000,1,"SUV usada, motor 1.8, transmisión automática, color verde. Kilometraje aproximado: 52.000 km.",https://images.unsplash.com/photo-1519641471654-76ce0107ad1b
+Moto,Yamaha,FZ 2.0,2022,10500000,1,"Motocicleta usada, 150 cc, transmisión mecánica, color negro. Kilometraje aproximado: 18.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Honda,CB 125F,2021,7200000,1,"Motocicleta usada, 125 cc, transmisión mecánica, color rojo. Kilometraje aproximado: 22.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,AKT,NKD 125,2023,5900000,1,"Motocicleta usada, 125 cc, transmisión mecánica, color negro. Kilometraje aproximado: 9.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Bajaj,Pulsar NS 200,2020,9800000,1,"Motocicleta usada, 200 cc, transmisión mecánica, color azul. Kilometraje aproximado: 26.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Suzuki,Gixxer 150,2021,8900000,1,"Motocicleta usada, 150 cc, transmisión mecánica, color gris. Kilometraje aproximado: 19.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,TVS,Apache RTR 160,2022,8500000,1,"Motocicleta usada, 160 cc, transmisión mecánica, color negro. Kilometraje aproximado: 15.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Yamaha,NMAX 155,2021,14500000,1,"Scooter usada, 155 cc, transmisión automática, color gris. Kilometraje aproximado: 17.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Honda,XR 150L,2020,9700000,1,"Motocicleta doble propósito usada, 150 cc, color rojo. Kilometraje aproximado: 24.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Kawasaki,Ninja 250,2019,18500000,1,"Motocicleta deportiva usada, 250 cc, color verde. Kilometraje aproximado: 21.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39
+Moto,Hero,Hunk 160R,2022,8200000,1,"Motocicleta usada, 160 cc, transmisión mecánica, color azul. Kilometraje aproximado: 13.000 km.",https://images.unsplash.com/photo-1558981806-ec527fa84c39

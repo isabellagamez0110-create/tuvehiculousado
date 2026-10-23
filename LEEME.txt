@@ -1,0 +1,20 @@
+DATASET DE PRUEBA — TU VEHÍCULO USADO
+
+Contenido
+- vehiculos.csv: 30 registros de demostración con los campos que aparecen en el controlador de vehículos: tipo, marca, modelo, anio, precio, cantidad, descripcion, imagen.
+- usuarios.csv: 10 usuarios de demostración con id, nombre, correo, password y rol (administrador, cliente, vendedor).
+- compras.csv: 12 compras de ejemplo con usuario_id, vehiculo_id y precio. Los ID apuntan a los registros de ejemplo de usuarios.csv y vehiculos.csv.
+
+IMPORTANTE
+1. Los registros son sintéticos/de demostración, no son ofertas reales verificadas. Los precios son valores ilustrativos en pesos colombianos (COP).
+2. Este paquete contiene CSV, no inserta nada automáticamente en MySQL. Haz copia de seguridad de la base de datos antes de importar.
+3. En tu controlador de usuarios actual, las contraseñas se comparan en texto plano. Las contraseñas de aquí son únicamente para pruebas locales; no uses contraseñas reales. Para producción deben almacenarse con hash (por ejemplo bcrypt).
+4. El archivo compras.csv sirve como dataset de ejemplo. Importa solo las tres columnas requeridas por la API (usuario_id, vehiculo_id, precio) si tu tabla de compras usa esos nombres; si tu esquema es distinto, adapta los nombres antes de importarlo.
+5. El campo imagen contiene URL de ejemplo a imágenes de vehículos; si alguna no carga, reemplázala por una imagen propia o deja el campo vacío.
+
+Cuentas de demostración
+Administrador: admin@vehiculousado.test / AdminDemo2026!
+Cliente: cliente1@vehiculousado.test / ClienteDemo2026!
+Vendedor: vendedor1@vehiculousado.test / VendedorDemo2026!
+
+Campos de vehículos compatibles con productosController: tipo, marca, modelo, anio, precio, cantidad, descripcion, imagen.

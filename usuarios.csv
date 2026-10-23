@@ -1,0 +1,11 @@
+﻿id,nombre,correo,password,rol
+1,Admin Demo,admin@vehiculousado.test,AdminDemo2026!,administrador
+2,Cliente Demo 1,cliente1@vehiculousado.test,ClienteDemo2026!,cliente
+3,Cliente Demo 2,cliente2@vehiculousado.test,ClienteDemo2026!,cliente
+4,Cliente Demo 3,cliente3@vehiculousado.test,ClienteDemo2026!,cliente
+5,Cliente Demo 4,cliente4@vehiculousado.test,ClienteDemo2026!,cliente
+6,Vendedor Demo 1,vendedor1@vehiculousado.test,VendedorDemo2026!,vendedor
+7,Vendedor Demo 2,vendedor2@vehiculousado.test,VendedorDemo2026!,vendedor
+8,Vendedor Demo 3,vendedor3@vehiculousado.test,VendedorDemo2026!,vendedor
+9,Cliente Demo 5,cliente5@vehiculousado.test,ClienteDemo2026!,cliente
+10,Cliente Demo 6,cliente6@vehiculousado.test,ClienteDemo2026!,cliente
