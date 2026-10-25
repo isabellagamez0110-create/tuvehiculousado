@@ -1,0 +1,16 @@
+
+-- Proyecto: Tu Vehículo Usado
+-- Tabla de usuarios
+
+USE capasalmacen;
+
+CREATE TABLE IF NOT EXISTS usuario (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    rol VARCHAR(20) NOT NULL DEFAULT 'cliente',
+    PRIMARY KEY (id)
+) ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
