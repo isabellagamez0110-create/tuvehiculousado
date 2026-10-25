@@ -1,3 +1,4 @@
+
 name: Publicar microservicios en Docker Hub
 
 on:
@@ -9,6 +10,7 @@ on:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+
     steps:
       - name: Descargar código
         uses: actions/checkout@v4
@@ -19,18 +21,22 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Configurar Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Construir y publicar usuarios
         uses: docker/build-push-action@v6
         with:
           context: ./usuarios
+          file: ./usuarios/Dockerfile
           push: true
           tags: isags2026/usuarios:1.0
 
       - name: Construir y publicar vehículos
         uses: docker/build-push-action@v6
         with:
-          context: ./vehículos
-          file: ./vehículos/Dockerfile
+          context: ./vehiculos
+          file: ./vehiculos/Dockerfile
           push: true
           tags: isags2026/vehiculos:1.0
 
@@ -38,5 +44,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./compras
+          file: ./compras/Dockerfile
           push: true
           tags: isags2026/compras:1.0
