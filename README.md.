@@ -1,0 +1,43 @@
+# Tu Vehículo Usado
+
+## Descripción del proyecto
+
+Sistema para la gestión de vehículos usados que permite organizar usuarios, vehículos y compras mediante una arquitectura basada en microservicios.
+
+## Estructura del proyecto
+
+- `usuarios/`: microservicio de gestión de usuarios.
+- `vehiculos/`: microservicio de gestión de vehículos.
+- `compras/`: microservicio de gestión de compras.
+- `frontend/`: interfaz web de la aplicación.
+- `haproxy/`: configuración del balanceador de carga.
+- `usuarios.sql`: estructura de la tabla de usuarios.
+- `vehiculos.sql`: estructura de la tabla de vehículos.
+- `compras.sql`: estructura de la tabla de compras.
+- `docker-compose.yml`: configuración para ejecutar los servicios con Docker Compose.
+- `docker-stack.yml`: configuración para desplegar los servicios con Docker Swarm.
+
+## Imágenes de Docker Hub
+
+- `isags2026/usuarios:1.0`
+- `isags2026/vehiculos:1.0`
+- `isags2026/compras:1.0`
+
+## Tecnologías utilizadas
+
+- Node.js y Express.
+- MariaDB.
+- Docker y Docker Compose.
+- Docker Swarm.
+- HAProxy.
+- GitHub Actions.
+
+## Base de datos
+
+La aplicación utiliza una base de datos MariaDB. Las estructuras de las tablas se encuentran en los archivos SQL del repositorio.
+
+**Importante:** las credenciales de conexión deben configurarse mediante variables de entorno. No publiques contraseñas ni el archivo `.env`.
+
+## Despliegue
+
+Los archivos `docker-compose.yml` y `docker-stack.yml` contienen las configuraciones para preparar el despliegue de los microservicios. Antes de ejecutar el proyecto, configura las variables de entorno y verifica la conexión a la base de datos.
